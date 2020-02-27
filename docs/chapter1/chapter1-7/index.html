@@ -3,7 +3,7 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>resuspenssao.R - Curso de VEIN</title>
+<title>escapamento.R - Curso de VEIN</title>
 <meta name="description" content="Curso VEIN">
 <meta name="generator" content="Hugo 0.65.3" />
 <link href="https://ibarraespinosa.github.io/cursoveinindex.xml" rel="alternate" type="application/rss+xml">
@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 :root {}
 </style>
-<meta property="og:title" content="resuspenssao.R" />
+<meta property="og:title" content="escapamento.R" />
 <meta property="og:description" content="Curso VEIN" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/" />
@@ -39,9 +39,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
-<meta name="twitter:title" content="resuspenssao.R"/>
+<meta name="twitter:title" content="escapamento.R"/>
 <meta name="twitter:description" content="Curso VEIN"/>
-<meta itemprop="name" content="resuspenssao.R">
+<meta itemprop="name" content="escapamento.R">
 <meta itemprop="description" content="Curso VEIN"></head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCS5SFZ"
@@ -70,7 +70,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>resuspenssao.R</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<main><h1>escapamento.R</h1><p>Este arquivo plota os fatores de emissão disponiveis na função <code>ef_cetesb</code> de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.</p>
 <div class="edit-meta">
 Last updated on 20 Feb 2020
 
@@ -100,6 +100,85 @@ Published on 20 Feb 2020
 <li class="parent has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/">Aproximação Bottom-up<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/">Configuração<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/">metadata</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/">fleet_age</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/">tfs</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/">fuel</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/">mileage</a></li>
+</ul>
+  
+</li>
+
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/">main.R</a>
+  
+</li>
+
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/">net.R</a>
+  
+</li>
+
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-5/">traffic.R</a>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/">fuel_eval.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/">evaporativas.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class="parent active has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/">escapamento.R<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/">post.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/">plots.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/">wrf.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
 </ul>
   
 </li>
