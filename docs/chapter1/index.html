@@ -70,24 +70,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Aproximação Bottom-up</h1><p>Não tem uma estrutura definida para rodar vein, isso quer dizer que cada usuario poder ordenar as funções do jeito que quiser. Mas neste curso, vamos a deixar bem estruturado in inventário para evitar erros, evitar usso innecessario de memoria e que seja mais facil replicar os resultados.</p>
-<p>O caso que vai ser estudado vai ser considerando a frota de Brasil, especificamente a composição veicular presente nos <a href="https://cetesb.sp.gov.br/veicular/relatorios-e-publicacoes/">inventários de emissões da CETESB</a>. A razão é simples, para cada tipo de veículo tem um fator de emissão.</p>
-<h2 id="estrutura-do-inventario">Estrutura do inventario</h2>
-<p>Para gerar a estrutura do invenário primeiro temos que conhecer a composição veicular que vamos utilizar, que é da CETESB:</p>
+<main><h1>Aproximação Bottom-up</h1><p>Este curso vai usar a aproximação bottom-up para fazer a estimativa de emissões veiculares. Esta aproximação consiste em contar com o fluxo veicular nas ruas. As ruas estão numa rede de transporte conhecida, como por exemplo, uma simulação de tráfego de 4 etapas. Para mais detalhes sobre este tipo de simulações, veja o livro <a href="https://www.wiley.com/en-gb/Modelling+Transport%2C+4th+Edition-p-9780470760390">Modelling Transport (Juan de Dios Ortúzar, Luis G. Willumsen)</a>. A pesquisa origem destino feita pelo metro faz uma caracterização dos origem e destinos de viagem entre zonas da região metropolitana de São Paulo. Logo, a <a href="http://www.cetsp.com.br/">Companhia de Engenharia de Trafego</a> e a <a href="http://www.sptrans.com.br/">SPTRANS</a> usam esta informação par realizar dita modelação. As duas modelações soman aproximadamente 50.000 ruas, mas para este curso vamos usar aproximadamente 3500 ruas, considerando as ruas com mais trafego.</p>
+<p>A aproximação top-down e bottom-up é usada na <a href="https://www.eea.europa.eu/themes/air/air-pollution-sources-1/emep-eea-air-pollutant-emission-inventory-guidebook">guia de estimativa de emissões de Europa</a>. No capitulo de emissẽos veiculares se establece que as estimativas bottom-up e top-down debem ser comparadas e calibradas com as vendas de combustivel da região.</p>
+<p><img src="https://i.imgur.com/GpOqxWn.png" alt=""></p>
+<div class="panel panel-success"><div class="panel-header">
+<h3>Dica</h3>
+</div><div class="panel-body">
+A lógica detras de isto é bem simples e quer dizer que se fazemos uma estimativa de emissões veiculares de uma região durante ump eriodo de tempo, nosso inventário devería ser capaz  de representar as vendas de combustivel da mesma região e o mesmo periodo de tempo. No caso de São Paulo é importante pois a variação das vendas de gasohol e etanol nos veículos flex variam fortemente..
+</div>
+</div>
+
+<h2 id="composição-veicular-da-cetesb">Composição veicular da CETESB</h2>
+<p>Para gerar a estrutura do invenário primeiro temos que conhecer a composição veicular que vamos utilizar, que é da <a href="https://cetesb.sp.gov.br/">CETESB</a>:</p>
 <p><img src="https://i.imgur.com/PVyU0r0.png" alt=""></p>
-<p>A função que gera a estrutura do inventário é <code>inventory</code> os argumentos mais importantes são <code>name</code> e <code>vehcomp</code></p>
-<ul>
-<li><code>name</code> é o nome da pasta onde vai ser compilado o inventario</li>
-<li><code>vehcomp</code> é a composição veicular, neste caso a composião da CETESB com os nomes em inglês:</li>
-<li><strong>PC</strong> (Automóveis), <strong>LCV</strong> (Comerciais Leves), <strong>HGV</strong> (Caminhões), <strong>BUS</strong> (Ônibus), <strong>MC</strong> (Motocicletas).</li>
-</ul>
-<p>Quantos tipos de veículos tem de cada?</p>
-<p>Então, tem que ser usada a função assim:</p>
-<div class="highlight"><pre class="chroma"><code class="language-r" data-lang="r"><span class="nf">inventory</span><span class="p">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;saopaulo&#34;</span><span class="p">,</span> 
-          <span class="n">vehcomp</span> <span class="o">=</span> <span class="nf">c</span><span class="p">(</span><span class="n">PC</span> <span class="o">=</span> <span class="m">4</span><span class="p">,</span> <span class="n">LCV</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span> <span class="n">HGV</span> <span class="o">=</span> <span class="m">5</span><span class="p">,</span> <span class="n">BUS</span> <span class="o">=</span> <span class="m">3</span><span class="p">,</span> <span class="n">MC</span> <span class="o">=</span> <span class="m">9</span><span class="p">),</span>
-          <span class="n">ef</span> <span class="o">=</span> <span class="s">&#34;CETESB&#34;</span><span class="p">,</span>
-          <span class="n">year</span> <span class="o">=</span> <span class="m">2018</span><span class="p">)</span>
-</code></pre></div><div class="edit-meta">
+<p>Quantos tipos de veículos tem?</p>
+<p>Neste curso vai ser aplicada a composição veicular e fatores de emissão da CETESB</p>
+<div class="edit-meta">
 Last updated on 7 Feb 2020
 
 
@@ -205,7 +203,7 @@ Published on 7 Feb 2020
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/">plots.R<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/">wrf.R<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/1/">Chapter 3-2-1</a></li>
