@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><script src="/livereload.js?port=1313&mindelay=10&v=2" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Pre-Requisitos - Curso de VEIN</title>
+<meta name="description" content="Curso VEIN">
+<meta name="generator" content="Hugo 0.65.3" />
+<link href="http://localhost:1313/cursovein/index.xml" rel="alternate" type="application/rss+xml">
+<link rel="canonical" href="http://localhost:1313/cursovein/comecando/configuration/">
+<link rel="stylesheet" href="http://localhost:1313/cursovein/css/theme.min.css">
+<script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link rel="stylesheet" href="http://localhost:1313/cursovein/css/chroma.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+<script src="http://localhost:1313/cursovein/js/bundle.js"></script><style>
+:root {}
+</style>
+<meta property="og:title" content="Pre-Requisitos" />
+<meta property="og:description" content="vein importa funções de:
+ sf, para trabalhar com vetores espaciais. data.table processador de data.frame ultra rápido.  Outras librerias necessarias para o curso  eixport: lê as saídas espaciais do VEIN e outros para gerar dados de entrada de modelos de qualidade do ar, como WRF-Chem. readxl: lê arquivos de Excel. ggplot2: faz gráficos de qualidade de publicação.  Spatial Features sf sf é um pacote de R com interface para as bibliotecas GDAL (vetores), PROJ e GEOS." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/cursovein/comecando/configuration/" />
+<meta property="og:image" content="http://localhost:1313/cursovein/og-image.png"/>
+<meta property="article:published_time" content="2017-10-17T15:26:15+00:00" />
+<meta property="article:modified_time" content="2019-10-26T15:26:15+00:00" /><meta property="og:site_name" content="Hugo Techdoc Theme" />
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://localhost:1313/cursovein/og-image.png"/>
+
+<meta name="twitter:title" content="Pre-Requisitos"/>
+<meta name="twitter:description" content="vein importa funções de:
+ sf, para trabalhar com vetores espaciais. data.table processador de data.frame ultra rápido.  Outras librerias necessarias para o curso  eixport: lê as saídas espaciais do VEIN e outros para gerar dados de entrada de modelos de qualidade do ar, como WRF-Chem. readxl: lê arquivos de Excel. ggplot2: faz gráficos de qualidade de publicação.  Spatial Features sf sf é um pacote de R com interface para as bibliotecas GDAL (vetores), PROJ e GEOS."/>
+<meta itemprop="name" content="Pre-Requisitos">
+<meta itemprop="description" content="vein importa funções de:
+ sf, para trabalhar com vetores espaciais. data.table processador de data.frame ultra rápido.  Outras librerias necessarias para o curso  eixport: lê as saídas espaciais do VEIN e outros para gerar dados de entrada de modelos de qualidade do ar, como WRF-Chem. readxl: lê arquivos de Excel. ggplot2: faz gráficos de qualidade de publicação.  Spatial Features sf sf é um pacote de R com interface para as bibliotecas GDAL (vetores), PROJ e GEOS.">
+<meta itemprop="datePublished" content="2017-10-17T15:26:15&#43;00:00" />
+<meta itemprop="dateModified" content="2019-10-26T15:26:15&#43;00:00" />
+<meta itemprop="wordCount" content="184">
+<meta itemprop="image" content="http://localhost:1313/cursovein/og-image.png"/>
+
+
+
+<meta itemprop="keywords" content="" /></head>
+<body>
+
+<div class="container"><header>
+<h1>Curso de VEIN</h1>
+
+ <span class="version">Version 0.8.8</span>
+<a href="https://github.com/atmoschem/vein" class="github"><i class="fab fa-github"></i></a>
+<p class="description">Curso VEIN</p>
+
+</header>
+<div class="global-menu">
+<nav>
+<ul>
+<li><a href="https://ibarraespinosa.github.io/cursovein">Home</a></li>
+<li><a href="https://twitter.com/SergioIbarraEs1">Twitter</a></li>
+<li><a href="/cursovein/post/goisforlovers/">(Hu)go Template Primer</a></li>
+<li><a href="/cursovein/about/">Acerca de</a></li>
+<li><a href="/cursovein/post/hugoisforlovers/">Getting Started with Hugo</a></li><li class="parent"><a href="">Tutorials<i class="fas fa-angle-right"></i></a>
+<ul class="sub-menu">
+<li class="child"><a href="/cursovein/post/creating-a-new-theme/">Creating a New Theme</a></li>
+<li class="child"><a href="/cursovein/post/migrate-from-jekyll/">Migrating from Jekyll</a></li>
+</ul>
+</li></ul>
+</nav>
+</div>
+<div class="content-container">
+<main><h1>Pre-Requisitos</h1>
+<p>vein importa funções de:</p>
+<ul>
+<li><a href="https://github.com/r-spatial/sf/">sf</a>, para trabalhar com vetores espaciais.</li>
+<li><a href="https://github.com/Rdatatable/data.table">data.table</a> processador de data.frame <strong>ultra rápido</strong>.</li>
+</ul>
+<h2 id="outras-librerias-necessarias-para-o-curso">Outras librerias necessarias para o curso</h2>
+<ul>
+<li><a href="https://github.com/atmoschem/eixport/">eixport</a>: lê as saídas espaciais do VEIN e outros para gerar dados de entrada de modelos de qualidade do ar, como <a href="https://www2.acom.ucar.edu/wrf-chem">WRF-Chem</a>.</li>
+<li><a href="https://readxl.tidyverse.org//">readxl</a>: lê arquivos de Excel.</li>
+<li><a href="https://ggplot2.tidyverse.org/">ggplot2</a>: faz gráficos de qualidade de publicação.</li>
+</ul>
+<h2 id="spatial-features-sf">Spatial Features sf</h2>
+<p><a href="https://github.com/r-spatial/sf/">sf</a> é um pacote de R com interface para as bibliotecas <a href="http://www.gdal.org/">GDAL</a> (vetores), <a href="http://proj4.org/">PROJ</a> e <a href="http://trac.osgeo.org/geos">GEOS</a>. Isto implica que estas bibliotecas precisam estar presentes no sistema antes de instalar sf.
+<strong>eixport</strong> importa funções do <a href="https://CRAN.R-project.org/package=ncdf4">ncdf4</a>, portanto, também é necessário instalar <a href="https://www.unidata.ucar.edu/software/netcdf/">NetCDF</a>.</p>
+<p>As recomendações da página web de GitHub <a href="https://github.com/r-spatial/sf/">sf</a> para instalar as bibliotecas em diferentes sistemas são:</p>
+<h3 id="windows">Windows</h3>
+<p>Instala [R], ve a versão e instala <a href="https://cran.r-project.org/bin/windows/Rtools/">Rtools</a>, que provê MinGW-w64 32/64-bit para compilar C, Fortran e C++. Isto é importante porque o VEIN também possui códigos em Fortran.</p>
+<h3 id="ubuntu">Ubuntu</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo apt-get install libudunits2-dev libgdal-dev libgeos-dev libproj-dev libnetcdf-dev
+</code></pre></div><h3 id="fedora">Fedora</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">sudo dnf install gdal-devel proj-devel proj-epsg proj-nad geos-devel udunits2-devel netcdf-devel
+</code></pre></div><h3 id="arch">Arch</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">pacman -S gdal proj geos netcdf
+pacaur/yaourt/whatever -S udunits
+</code></pre></div><h3 id="macos">MacOS</h3>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">brew install pkg-config
+brew install gdal netcdf
+</code></pre></div><div class="edit-meta">
+Last updated on 26 Oct 2019
+
+
+<br>
+Published on 17 Oct 2017
+<br><a href="comecando/configuration.md/edit/master/content/comecando/configuration.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="http://localhost:1313/cursovein/comecando/" title="Começando"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Começando</a>
+<a class="nav nav-next" href="http://localhost:1313/cursovein/comecando/installation/" title="Instalação">Next - Instalação <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+</nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
+</footer>
+</main><div class="sidebar">
+
+<nav class="slide-menu">
+<ul>
+<li class=""><a href="http://localhost:1313/cursovein/">Home</a></li>
+
+<li class="parent has-sub-menu"><a href="http://localhost:1313/cursovein/comecando/">Começando<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class="active"><a href="http://localhost:1313/cursovein/comecando/configuration/">Pre-Requisitos</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/comecando/installation/">Instalação</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/comecando/dados/">Dados dentro do modelo</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/">Aproximação Bottom-up<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-2/">Configuração<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-2/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-2/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-2/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-2/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-3/">net.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-3/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-3/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-3/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-3/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-4/">traffic.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-4/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-4/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-4/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-4/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-5/">escapamento.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-5/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-5/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-5/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-5/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-6/">evaporativas.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-6/1/">evaporativas.R</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-6/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-6/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-6/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-7/">resuspenssao.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-7/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-7/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-7/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-7/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-8/">post.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-8/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-8/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-8/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-8/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="http://localhost:1313/cursovein/chapter1/chapter1-9/">plots.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-9/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-9/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-9/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="http://localhost:1313/cursovein/chapter1/chapter1-9/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+</ul>
+  
+</li>
+
+
+
+
+
+
+
+
+</ul>
+</nav>
+
+
+
+<div class="sidebar-footer"></div>
+</div>
+</div><a href="#" id="backtothetop-fixed" class="backtothetop"
+ data-backtothetop-duration="600"
+ data-backtothetop-easing="easeOutQuart"
+ data-backtothetop-fixed-fadeIn="1000"
+ data-backtothetop-fixed-fadeOut="1000"
+ data-backtothetop-fixed-bottom="10"
+ data-backtothetop-fixed-right="20">
+<span class="fa-layers fa-fw">
+<i class="fas fa-circle"></i>
+<i class="fas fa-arrow-circle-up"></i>
+</span></a>
+</div>
+</body>
+</html>
