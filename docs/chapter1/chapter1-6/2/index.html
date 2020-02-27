@@ -3,7 +3,7 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Chapter 3-2-2 - Curso de VEIN</title>
+<title>escapamento.R - Curso de VEIN</title>
 <meta name="description" content="Curso VEIN">
 <meta name="generator" content="Hugo 0.65.3" />
 <link href="https://ibarraespinosa.github.io/cursoveinindex.xml" rel="alternate" type="application/rss+xml">
@@ -30,8 +30,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 :root {}
 </style>
-<meta property="og:title" content="Chapter 3-2-2" />
-<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+<meta property="og:title" content="escapamento.R" />
+<meta property="og:description" content="Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.
+As figuras são almacenadas na pasta images.
+É importante mencioanar que os fatores de emissão do vein não são exatamente iguais da CETESB." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/" />
 <meta property="og:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
@@ -40,13 +42,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
-<meta name="twitter:title" content="Chapter 3-2-2"/>
-<meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
-<meta itemprop="name" content="Chapter 3-2-2">
-<meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+<meta name="twitter:title" content="escapamento.R"/>
+<meta name="twitter:description" content="Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.
+As figuras são almacenadas na pasta images.
+É importante mencioanar que os fatores de emissão do vein não são exatamente iguais da CETESB."/>
+<meta itemprop="name" content="escapamento.R">
+<meta itemprop="description" content="Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.
+As figuras são almacenadas na pasta images.
+É importante mencioanar que os fatores de emissão do vein não são exatamente iguais da CETESB.">
 <meta itemprop="datePublished" content="2017-10-17T15:26:15&#43;00:00" />
 <meta itemprop="dateModified" content="2017-10-17T15:26:15&#43;00:00" />
-<meta itemprop="wordCount" content="69">
+<meta itemprop="wordCount" content="108">
 <meta itemprop="image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
 
@@ -79,16 +85,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Chapter 3-2-2</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<main><h1>escapamento.R</h1>
+<p>Este arquivo plota os fatores de emissão disponiveis na função <code>ef_cetesb</code> de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.</p>
+<p>As figuras são almacenadas na pasta images.</p>
+<p>É importante mencioanar que os fatores de emissão do vein não são exatamente iguais da CETESB. A diferençã se da nos veículos mais velhos. Especificamente, no vein foi adotado o criterio de media móvel dos ultimos dois anos para ter uma estimativa dos fatores de emissão de véiculos velhos não publicados pela CETESB.</p>
 <div class="edit-meta">
 Last updated on 17 Oct 2017
 
 
 <br>
 Published on 17 Oct 2017
-<br><a href="chapter1/chapter1-6/2.md/edit/master/content/chapter1/chapter1-6/2.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/" title="evaporativas.R"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - evaporativas.R</a>
-<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/" title="Chapter 3-2-3">Next - Chapter 3-2-3 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="chapter1/chapter1-6/2.md/edit/master/content/chapter1/chapter1-6/2.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/" title="fuel_eval.R"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - fuel_eval.R</a>
+<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/" title="evaporativas.R">Next - evaporativas.R <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -135,40 +143,26 @@ Published on 17 Oct 2017
   
 </li>
 
-<li class="parent has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/">fuel_eval.R<span class="mark opened">-</span></a>
+<li class="parent has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/">estimativas<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/">evaporativas.R</a></li>
-<li class="active"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/">Chapter 3-2-4</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/">fuel_eval.R</a></li>
+<li class="active"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/">escapamento.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/">evaporativas.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/">resuspenssao.R</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/">escapamento.R<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/1/">Chapter 3-2-1</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/4/">Chapter 3-2-4</a></li>
-</ul>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/">post.R</a>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/">post.R<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/1/">Chapter 3-2-1</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/4/">Chapter 3-2-4</a></li>
-</ul>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/">plots.R</a>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/">plots.R<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/">wrf.R<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/1/">Chapter 3-2-1</a></li>

@@ -3,7 +3,7 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>escapamento.R - Curso de VEIN</title>
+<title>post.R - Curso de VEIN</title>
 <meta name="description" content="Curso VEIN">
 <meta name="generator" content="Hugo 0.65.3" />
 <link href="https://ibarraespinosa.github.io/cursoveinindex.xml" rel="alternate" type="application/rss+xml">
@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 :root {}
 </style>
-<meta property="og:title" content="escapamento.R" />
+<meta property="og:title" content="post.R" />
 <meta property="og:description" content="Curso VEIN" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/" />
@@ -39,9 +39,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
-<meta name="twitter:title" content="escapamento.R"/>
+<meta name="twitter:title" content="post.R"/>
 <meta name="twitter:description" content="Curso VEIN"/>
-<meta itemprop="name" content="escapamento.R">
+<meta itemprop="name" content="post.R">
 <meta itemprop="description" content="Curso VEIN"></head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCS5SFZ"
@@ -70,15 +70,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>escapamento.R</h1><p>Este arquivo plota os fatores de emissão disponiveis na função <code>ef_cetesb</code> de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.</p>
+<main><h1>post.R</h1><p>Este scirpt tem funções muito importantes:</p>
+<ul>
+<li>Agregar as emissões por rua</li>
+<li>Agregar as emissões numa grade espacial</li>
+<li>Agregar as emissões por ano de uso, hora, tipo de veiculo, etc.</li>
+</ul>
+<p>O modo consiste em identificar as categorias necessarias pelo nome. Por exemplo, &ldquo;G_NMHC&rdquo; vai agregar todas as categorias que emitem NMHC com gasolina ou flex gasolina.</p>
+<p>Inspeccionar as pastas <strong>emi</strong></p>
+<div class="panel panel-success"><div class="panel-header">
+<h3>fazer</h3>
+</div><div class="panel-body">
+Inspeccionar as pastas **emi**
+</div>
+</div>
+
+<p>Se o usuario deseja fazer uma modelação com WRF Chem, pode criar a gradeusando a função wrf_grid de eixport.</p>
+<pre><code>?eixport::wrf_grid
+</code></pre><div class="panel panel-danger"><div class="panel-header">
+<h3>wrfinput_d0x</h3>
+</div><div class="panel-body">
+Para gerar a grade de wrf,é preciso o wrfinput_d0x.
+</div>
+</div>
+
 <div class="edit-meta">
 Last updated on 20 Feb 2020
 
 
 <br>
 Published on 20 Feb 2020
-<br><a href="chapter1/chapter1-7/_index.md/edit/master/content/chapter1/chapter1-7/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/" title="Chapter 3-2-4"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Chapter 3-2-4</a>
-<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/1/" title="Chapter 3-2-1">Next - Chapter 3-2-1 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="chapter1/chapter1-7/_index.md/edit/master/content/chapter1/chapter1-7/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/" title="resuspenssao.R"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - resuspenssao.R</a>
+<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/" title="plots.R">Next - plots.R <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -125,40 +148,26 @@ Published on 20 Feb 2020
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/">fuel_eval.R<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/">estimativas<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/">evaporativas.R</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/">Chapter 3-2-4</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/">fuel_eval.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/">escapamento.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/">evaporativas.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/">resuspenssao.R</a></li>
 </ul>
   
 </li>
 
-<li class="parent active has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/">escapamento.R<span class="mark opened">-</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/1/">Chapter 3-2-1</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/4/">Chapter 3-2-4</a></li>
-</ul>
+<li class="parent active"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/">post.R</a>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/">post.R<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/1/">Chapter 3-2-1</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/4/">Chapter 3-2-4</a></li>
-</ul>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/">plots.R</a>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/">plots.R<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/">wrf.R<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/1/">Chapter 3-2-1</a></li>
