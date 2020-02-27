@@ -70,7 +70,59 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Configuração</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<main><h1>Configuração</h1><p>A configurção do inventário é feita através de dados em arquivos de entrada que são lidos no R. R permite ler <strong>muitos</strong> diferentes tipos de dados mas para este curso, e tambem porque segundo minha experiencia é mais facil e organizado, vamos usar <a href="https://support.office.com/en-us/excel">Excel</a>. Então, para este curso precisa saber Excel.</p>
+<div class="panel panel-caution"><div class="panel-header">
+<h3>R</h3>
+</div><div class="panel-body">
+Voces podem copiar os codigos e colar diretamente no R.
+</div>
+</div>
+
+<h2 id="get_project">get_project</h2>
+<p>Abra o R na temrinal, Rstudio ou VSCODE, etc etc e chame a livreria vein, ela tem que ter a versão 0.8.8. Logo use a função get_project e coloque o nome com a rota absoluta para baixar o projeto onde vamos rodar vein.</p>
+<pre><code>library(vein)
+get_project(directory = &quot;ROTA-PARA-INVENTARIO&quot;)
+</code></pre><div class="panel panel-notice"><div class="panel-header">
+<h3>TAB</h3>
+</div><div class="panel-body">
+Se voces usarm Rstudio, cliquem TAB depois do parentesis inciial para ver os argumentos. Tambem, se clicam TAB depois da primeira aspa ", Rstudio mostra as pastas onde voces estão.
+</div>
+</div>
+
+<p>Se tudo deu certo, vai ter uma mensagem mostrando onde esta projeto. <strong>Fecha Rstudio, usa o navegador e vai para a pasta, e clica em main.Rproj</strong>. De esta forma vai abrir projeto usando Rstudio.</p>
+<h2 id="estrutura">Estrutura</h2>
+<p>A estrutura do vien e mostrada na figura a seguir, e consiste em:</p>
+<pre><code>├── config
+│   ├── clean.R
+│   ├── fuel.rds
+│   ├── inventory.xlsx
+├── config.R
+├── main.R
+├── main.Rproj
+├── network
+│   ├── net.gpkg
+├── scripts
+│   ├── escapamento.R
+│   ├── evaporativas.R
+│   ├── fuel_eval.R
+│   ├── net.R
+│   ├── plots.R
+│   ├── post.R
+│   ├── resuspenssao.R
+│   ├── traffic.R
+│   └── wrf.R
+└── wrf
+    └── wrfinput_d02
+</code></pre><p><img src="https://i.imgur.com/5g8L1VA.png" alt=""></p>
+<div class="panel panel-notice"><div class="panel-header">
+<h3>Linux</h3>
+</div><div class="panel-body">
+Se tiver tree instalado, faz tree no diretorio.
+</div>
+</div>
+
+<h2 id="inventoryxlsx">inventory.xlsx</h2>
+<p>Agora vamos voltar no navegador e abram o arquivo inventory.xlsx, vejam que tem.</p>
 <div class="edit-meta">
 Last updated on 20 Feb 2020
 
@@ -78,7 +130,7 @@ Last updated on 20 Feb 2020
 <br>
 Published on 20 Feb 2020
 <br><a href="chapter1/chapter1-2/_index.md/edit/master/content/chapter1/chapter1-2/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/" title="Aproximação Bottom-up"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Aproximação Bottom-up</a>
-<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/" title="Chapter 3-2-1">Next - Chapter 3-2-1 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/" title="metadata">Next - metadata <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -100,6 +152,105 @@ Published on 20 Feb 2020
 <li class="parent has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/">Aproximação Bottom-up<span class="mark opened">-</span></a>
   
 <ul class="sub-menu">
+
+<li class="parent active has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/">Configuração<span class="mark opened">-</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/">metadata</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/">net.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/">traffic.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-5/">escapamento.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-5/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-5/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-5/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-5/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/">evaporativas.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/">evaporativas.R</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/">resuspenssao.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-7/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/">post.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-8/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/">plots.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-9/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
+
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/">wrf.R<span class="mark closed">+</span></a>
+  
+<ul class="sub-menu">
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/1/">Chapter 3-2-1</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/2/">Chapter 3-2-2</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/3/">Chapter 3-2-3</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-10/4/">Chapter 3-2-4</a></li>
+</ul>
+  
+</li>
 </ul>
   
 </li>
