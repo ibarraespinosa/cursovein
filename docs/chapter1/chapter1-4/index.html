@@ -64,7 +64,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="content-container">
 <main><h1>net.R</h1><p>O arquivo net.R processa e projeta o arquivo net como <a href="https://spatialreference.org/">crs</a> e plota os campos.
-o dados net.gpkg tem que ter minimo as siguientes colunas:</p>
+Os dados net.gpkg precisam ter no mínimo as seguintes colunas:</p>
 <ul>
 <li>pc</li>
 <li>lcv</li>
@@ -75,16 +75,16 @@ o dados net.gpkg tem que ter minimo as siguientes colunas:</p>
 <div class="panel panel-caution"><div class="panel-header">
 <h3>GPKG</h3>
 </div><div class="panel-body">
-é um formato aberto e no propietario, para almacenar [dados espaciais](https://en.wikipedia.org/wiki/GeoPackage). Por exemplo, shapefile é o formato propietario ESRI Shapefile.
+é um formato aberto e não-proprietario, para armazenar [dados espaciais](https://en.wikipedia.org/wiki/GeoPackage). Por exemplo, shapefile é o formato proprietario ESRI Shapefile.
 </div>
 </div>
 
-<p>É importante mencionar que o formato <strong>ESRI Shapefile</strong> não é recomendado usar pois alcanzou sua <em>end of life</em>.</p>
-<p>a função <code>st_read</code> e do pacote <a href="https://github.com/r-spatial/sf/">sf</a> que tem bindings para as librerias C++ e C GDAL, Proj e GEOS para ler e processar dados espaciais.</p>
+<p>É importante mencionar que o formato <strong>ESRI Shapefile</strong> não é recomendado usar, pois alcançou sua <em>end of life</em>.</p>
+<p>A função <code>st_read</code> é do pacote <a href="https://github.com/r-spatial/sf/">sf</a> que tem bindings para as bibliotecas C++ e C GDAL, Proj e GEOS para ler e processar dados espaciais.</p>
 <div class="panel panel-success"><div class="panel-header">
 <h3>Formatos de dados espaciais</h3>
 </div><div class="panel-body">
-Tem muitos formatos de dados espaciais classificados como vetores e raster. a libreria GDAL permite ler e salvar em estos formatos. De esta forma, usando sf podemos ler diretamente qualquer dado de formato espacial. Veja [aqui](https://gdal.org/drivers/vector/index.html).
+Existem muitos formatos de dados espaciais classificados como vetores e raster. A biblioteca GDAL permite ler e salvar dados nestes formatos. Desta forma, usando sf podemos ler diretamente qualquer dado de formato espacial. Veja [aqui](https://gdal.org/drivers/vector/index.html).
 </div>
 </div>
 

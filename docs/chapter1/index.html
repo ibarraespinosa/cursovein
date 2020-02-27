@@ -63,21 +63,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Aproximação Bottom-up</h1><p>Este curso vai usar a aproximação bottom-up para fazer a estimativa de emissões veiculares. Esta aproximação consiste em contar com o fluxo veicular nas ruas. As ruas estão numa rede de transporte conhecida, como por exemplo, uma simulação de tráfego de 4 etapas. Para mais detalhes sobre este tipo de simulações, veja o livro <a href="https://www.wiley.com/en-gb/Modelling+Transport%2C+4th+Edition-p-9780470760390">Modelling Transport (Juan de Dios Ortúzar, Luis G. Willumsen)</a>. A pesquisa origem destino feita pelo metro faz uma caracterização dos origem e destinos de viagem entre zonas da região metropolitana de São Paulo. Logo, a <a href="http://www.cetsp.com.br/">Companhia de Engenharia de Trafego</a> e a <a href="http://www.sptrans.com.br/">SPTRANS</a> usam esta informação par realizar dita modelação para horario pico de manhá. As duas modelações soman aproximadamente 50.000 ruas, mas para este curso vamos usar aproximadamente 3500 ruas, considerando as ruas com mais trafego.</p>
-<p>A aproximação top-down e bottom-up é usada na <a href="https://www.eea.europa.eu/themes/air/air-pollution-sources-1/emep-eea-air-pollutant-emission-inventory-guidebook">guia de estimativa de emissões de Europa</a>. No capitulo de emissẽos veiculares se establece que as estimativas bottom-up e top-down debem ser comparadas e calibradas com as vendas de combustivel da região.</p>
+<main><h1>Aproximação Bottom-up</h1><p>Este curso vai usar a aproximação bottom-up para fazer a estimativa de emissões veiculares. Esta aproximação consiste em contar com o fluxo veicular nas ruas. As ruas estão numa rede de transporte conhecida, como por exemplo, uma simulação de tráfego de 4 etapas. Para mais detalhes sobre este tipo de simulações, veja o livro <a href="https://www.wiley.com/en-gb/Modelling+Transport%2C+4th+Edition-p-9780470760390">Modelling Transport (Juan de Dios Ortúzar, Luis G. Willumsen)</a>. A pesquisa origem destino feita pelo <a href="http://www.metro.sp.gov.br/">Metrô</a> faz uma caracterização das origens e destinos de viagens entre zonas da região metropolitana de São Paulo. Logo, a <a href="http://www.cetsp.com.br/">Companhia de Engenharia de Trafego</a> e a <a href="http://www.sptrans.com.br/">SPTRANS</a> usam estas informações para realizar duas modelações para o horário pico de manhã. As duas modelações somam aproximadamente 50.000 ruas, mas para este curso vamos usar aproximadamente 3.500 ruas, considerando as ruas com mais tráfego.</p>
+<p>As aproximações top-down e bottom-up são usadas na <a href="https://www.eea.europa.eu/themes/air/air-pollution-sources-1/emep-eea-air-pollutant-emission-inventory-guidebook">guia de estimativa de emissões de Europa</a>. No capítulo de emissões veiculares se estabelece que as estimativas bottom-up e top-down devem ser comparadas e calibradas com as vendas de combustível da região.</p>
 <p><img src="https://i.imgur.com/GpOqxWn.png" alt=""></p>
 <div class="panel panel-success"><div class="panel-header">
 <h3>Lógica</h3>
 </div><div class="panel-body">
-A lógica detras de isto é bem simples e quer dizer que se fazemos uma estimativa de emissões veiculares de uma região durante ump eriodo de tempo, nosso inventário devería ser capaz  de representar as vendas de combustivel da mesma região e o mesmo periodo de tempo. No caso de São Paulo é importante pois a variação das vendas de gasohol e etanol nos veículos flex variam fortemente..
+A lógica atrás disto é bem simples e quer dizer que se fizermos uma estimativa de emissões veiculares de uma região durante um período de tempo, nosso inventário deveria ser capaz de representar as vendas de combustível da mesma região e o mesmo período de tempo. No caso de São Paulo isto é importante, pois a variação das vendas de gasohol e etanol nos veículos flex variam fortemente..
 </div>
 </div>
 
 <h2 id="composição-veicular-da-cetesb">Composição veicular da CETESB</h2>
-<p>Para gerar a estrutura do invenário primeiro temos que conhecer a composição veicular que vamos utilizar, que é da <a href="https://cetesb.sp.gov.br/">CETESB</a>:</p>
+<p>Para gerar a estrutura do inventário, primeiro temos que conhecer a composição veicular que vamos utilizar, que é da <a href="https://cetesb.sp.gov.br/">CETESB</a>:</p>
 <p><img src="https://i.imgur.com/PVyU0r0.png" alt=""></p>
-<p>Quantos tipos de veículos tem?</p>
-<p>Neste curso vai ser aplicada a composição veicular e fatores de emissão da CETESB</p>
+<p>Quantos tipos de veículos existem?</p>
+<p>Neste curso serão aplicados a composição veicular e fatores de emissão da CETESB.</p>
 <div class="edit-meta">
 Last updated on 7 Feb 2020
 

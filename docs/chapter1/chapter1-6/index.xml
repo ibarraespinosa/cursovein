@@ -17,8 +17,7 @@
       <pubDate>Thu, 20 Feb 2020 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/1/</guid>
-      <description>Este script estima o consumo de combustivel e compara com as vendas de combustivel da planilha fuel do inventory.xlsx. o control da comparação é dada na seção traffic.R com os fatores kD, kG e kE. O ideal é que o o valor seja 100%.
-Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.</description>
+      <description>Este script estima o consumo de combustivel e compara com as vendas de combustivel da planilha fuel do inventory.xlsx. O controle da comparação é dada na seção traffic.R com os fatores kD, kG e kE. O ideal é que o o valor seja 100%.</description>
     </item>
     
     <item>
@@ -27,9 +26,9 @@ Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de v
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/2/</guid>
-      <description>Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de vein e faz as estimações de emissões. O argumento veh de esta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.
-As figuras são almacenadas na pasta images.
-É importante mencioanar que os fatores de emissão do vein não são exatamente iguais da CETESB.</description>
+      <description>Este arquivo plota os fatores de emissão disponiveis na função ef_cetesb de VEIN e faz as estimações de emissões. O argumento veh desta função precisa os nomes certos, definidos na planilha metadata do inventory.xlsx. Então, se esta planilha tiver o nomes errados, a função não vai rodar.
+As figuras são armazenadas na pasta images.
+É importante mencionar que os fatores de emissão do VEIN não são exatamente iguais da CETESB. A diferença ocorre nos veículos mais velhos.</description>
     </item>
     
     <item>
@@ -38,7 +37,7 @@ As figuras são almacenadas na pasta images.
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/3/</guid>
-      <description>Esta seção inclui o nome dos fatores de emissãos evaporativos que são dirunal, hot soak e running losses. Estos processos consistem an evaporação da gasolina dentro do tanque devido a variações de temperatura ambiental. Como esta estimativa é bottom-up, tem uma abrangencia de, neste caso, 24 horas. E a metodología de emissões evaporativas da CETESB é baseada na europea, que usa a temperatura como média mensual. Então, só é preciso uma temperatura.</description>
+      <description>Esta seção inclui o nome dos fatores de emissões evaporativos que são diurnal, hot soak e running losses. Estes processos consistem nas evaporações da gasolina e etanol dentro do tanque do veículo devido à variações de temperatura ambiental. Como esta estimativa é bottom-up, tem uma abrangencia de, neste caso, 24 horas. E a metodologia de emissões evaporativas da CETESB é baseada na europeia, que usa a temperatura média mensal. Então, só é preciso uma temperatura.</description>
     </item>
     
     <item>
@@ -47,8 +46,8 @@ As figuras são almacenadas na pasta images.
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-6/4/</guid>
-      <description>O pó resuspendido é uma importante fonte de material particulado nas cidades. É por isso que é possivel ver maquinas que aspiram o pó das ruas em algumas cidades.
-A metodología adotada para estimar emissões de pó resuspendido é da US-EPA AP42, paved roads. Os parametros mais importantes são ADT (average daily traffic) calculado com o tfs e o silt.
+      <description>O pó ressuspendido é uma importante fonte de material particulado nas cidades. É por isso que é possivel ver maquinas que aspiram o pó das ruas em algumas cidades.
+A metodologia adotada para estimar emissões de pó ressuspendido é da US-EPA AP42, paved roads. Os parametros mais importantes são ADT (average daily traffic), calculado com o tfs, e o silt.
 O silt é a quantidade de material ressuspendível. Ela depende da quantidade de veículos que circulam, a situação de manutenção das ruas e material que pode cair nelas.</description>
     </item>
     

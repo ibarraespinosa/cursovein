@@ -17,7 +17,7 @@
       <pubDate>Thu, 20 Feb 2020 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/</guid>
-      <description>A metadata [e uma planilha bem simples mas éa mais importante. Ela mostra a coluna family, vehicles, fuel, size, trips_day. A composção veicular e mostrada na coluna vehicles e representa a composição da frota brasileira.
+      <description>A metadata é uma planilha bem simples, porém a mais importante. Ela mostra as colunas family, vehicles, fuel, size, trips_day. A composição veicular é mostrada na coluna vehicles e representa a composição da frota brasileira.
    family vehicles fuel size trips_day     PC PC_G G 1400cc 4.5   PC PC_E E 1400cc 4.5   PC PC_FG G 1400cc 4.5   PC PC_FE E 1400cc 4.</description>
     </item>
     
@@ -27,7 +27,7 @@
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/</guid>
-      <description>A planilha fleet_age mostra a frota veicular por ano de uso de veículos em circulação. Esto quer dizer que não são vendas de veículos, nem registros, mas são os veículos sem os veículos sucateados. Mutias vezes obter esta informação é dificil, especialmente fora do São Paulo,ou a nível do pais. Então, para obter este número de veículos em circulação, tem que aplicar uma função de sobrevicencia para considerar só os veículos que sobrevicem com o passo do tempo, descontando assim os sucateados.</description>
+      <description>A planilha fleet_age mostra a frota veicular por ano de uso de veículos em circulação. Isto quer dizer que não são vendas de veículos, nem registros, mas é a frota sem os veículos sucateados. Muitas vezes obter esta informação é difícil, especialmente fora do São Paulo ou a nível de país. Então, para obter este número de veículos em circulação, é preciso aplicar uma função de sobrevivência nos registros ou vendas de veículos novos para considerar só os veículos que sobrevivem com o tempo, descontando assim os sucateados.</description>
     </item>
     
     <item>
@@ -36,8 +36,8 @@
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/</guid>
-      <description>tfs são os temporal factors definidos no paper do vein (Ibarra-Espinosa et al 2018). Estos fatores são usados para extrapolar volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manha, precisamos um perfil horario de dados de traego normalizado para o horario pico para extrapolaro tráfego.
- Ibarra-Espinosa, S., Ynoue, R., O&amp;rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M.</description>
+      <description>tfs são os temporal factors definidos no paper do VEIN (Ibarra-Espinosa et al 2018). Estes fatores são usados para extrapolar o volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manhã, precisamos um perfil horario de dados de trafego normalizado para o horario pico.
+ Ibarra-Espinosa, S., Ynoue, R., O&amp;rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M.: VEIN v0.</description>
     </item>
     
     <item>
@@ -47,7 +47,7 @@
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/</guid>
       <description>fuel é uma planilha com a configuração a seguir:
-   fuel density_tm3 consumption_lt     D 0.84 3148464880   E 0.809 4646241104   G 0.75425 3871867587    é usada para comparar as estimativas de combustivel com as vendas. Os dados consumption_lt são as vendas de combsutivel para MASP 2018 de Diesel D com 7% de biodiesel, Gasohol (comunmente comhecida como gasolina com 27 % etanol anidro) E etanol (etanol hidratado).</description>
+   fuel density_tm3 consumption_lt     D 0.84 3148464880   E 0.809 4646241104   G 0.75425 3871867587    é usada para comparar as estimativas de combustivel com as vendas. Os dados consumption_lt são as vendas de combsutivel para MASP em 2018 de Diesel D com 7% de biodiesel, Gasohol G (comumente conhecida como gasolina com 27% etanol anidro) e etanol E (etanol hidratado).</description>
     </item>
     
     <item>
@@ -56,8 +56,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/</guid>
-      <description>mileage é a quilometragem promedio por ano de uso. Os dados do arquivo inventory.xlsx são baseados nas medições de odómetro de mais de um milhão de veículso feitos pela CETESB.
- Antonio de Castro Bruni and Marcelo Pereira Bales. 2013. Curvas de intensidade de uso por tipo de veiculo automotor da frota da cidade de Sao Paulo This functions depends on the age of use of the vehicle  </description>
+      <description>mileage é a quilometragem média por ano de uso. Os dados do arquivo inventory.xlsx são baseados nas medições de odômetro de mais de um milhão de veículos feitos pela CETESB.
+ Antonio de Castro Bruni and Marcelo Pereira Bales. 2013. Curvas de intensidade de uso por tipo de veiculo automotor da frota da cidade de Sao Paulo.  </description>
     </item>
     
   </channel>

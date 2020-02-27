@@ -63,11 +63,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>main.R</h1><p>O arquivo main.R tem todas as chamadas aos scripts e só este arquivo deveria ser modificado pelo usuario!</p>
+<main><h1>main.R</h1><p>o arquivo main.R tem todos os scripts necessarios para rodar VEIN. O usuario só precisaria mudar este arquivo e o inventory.xlsx, <strong>nada mais</strong>.</p>
+<p><img src="https://i.imgur.com/B6SoHYa.png" alt=""></p>
+<div class="panel panel-danger"><div class="panel-header">
+<h3>Atenção</h3>
+</div><div class="panel-body">
+O arquivo main.R tem todas as chamadas aos scripts e só este arquivo deveria ser modificado pelo usuario!
+</div>
+</div>
+
 <p>Este arquivo é parecido com namelist.input de WRF.</p>
-<p>Aqui se mostra que a simulação de tráfego esta almacenada no arquivo net.gpkg, mas pode ter outros formatos como shapefile ou MAPINFO.</p>
+<p>Aqui se mostra que a simulação de tráfego esta armazenada no arquivo net.gpkg, mas pode ter outros formatos como shapefile ou MAPINFO.</p>
 <h2 id="configr">config.R</h2>
-<p>O arquivo config.R transforma os dados do arquivo Excel, procura inconsistencia e para se acha, plota os tfs na pasta image e salva os arquivos como .rds na pasta config.</p>
+<p>O arquivo config.R transforma os dados do arquivo Excel, procura inconsistências e para se encontrar alguma, plota os tfs na pasta image e salva os arquivos como .rds na pasta config.</p>
 <div class="edit-meta">
 Last updated on 20 Feb 2020
 

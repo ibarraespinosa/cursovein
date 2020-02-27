@@ -63,11 +63,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>wrf.R</h1><p>O script wrf é para quem deseja gerar arquivos wrfchemis*. Estos arquivos são NetCDF que serão lidos pelo modulo Chem do modelo WRF.</p>
-<p>É preciso saber as pastas onde estão os wrfinputs, onde deseja salvar as wrf_chemis e muito importnate, saber o lt_emissions.</p>
+<main><h1>wrf.R</h1><p>O script wrf é para quem deseja gerar arquivos wrfchemis*. Estes arquivos são NetCDF que serão lidos pelo modulo Chem do modelo WRF.</p>
+<p>É preciso saber as pastas onde estão os wrfinputs, onde deseja salvar as wrf_chemis e muito importante, saber o lt_emissions.</p>
 <pre><code>?emis_order2
-</code></pre><p>Algumas vezes, nas modelações de WRF Chem os periodos de modelação não batem com os periodos das emissões. Por exemplo, as emissões no geral representam periodos estandar mas as modelações periodos especificos. O que é feito nessos casos é reciclar as emissões horarias para bater com as de modelaçao. Porém, as emissões estão em horal local e a modelação em hora UTC. A função emis_oorder2 recicla as emissões horarias e ordena as horas para bater com as horas desejadas de modelação <code>start_utc_time</code>.</p>
-<p>É importante que start_utc_time seja posterior de lt_emissions. Por exemplo, se start_utc_time é sexta  de uma hora UTC, lt_emissions poderia ser segunda as 00 em hora local.</p>
+</code></pre><p>Algumas vezes, nas modelações de WRF Chem os periodos de modelação não batem com os periodos das emissões. Por exemplo, as emissões no geral representam periodos padrões, mas as modelações representam periodos especificos. O que é feito nesses casos é reciclar as emissões horarias para bater com as de modelaçao. Porém, as emissões estão em horal local e a modelação em hora UTC. A função emis_oorder2 recicla as emissões horarias e ordena as horas para bater com as horas desejadas de modelação <code>start_utc_time</code>.</p>
+<p>É importante que start_utc_time seja posterior de lt_emissions. Por exemplo, se start_utc_time é sexta de uma hora UTC, lt_emissions poderia ser segunda as 00 em hora local.</p>
 <div class="edit-meta">
 Last updated on 20 Feb 2020
 
