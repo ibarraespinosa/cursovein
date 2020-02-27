@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title></title>
-    <link>/</link>
-    <description>Recent content on </description>
+    <title>Curso de VEIN</title>
+    <link>https://ibarraespinosa.github.io/cursovein/</link>
+    <description>Recent content on Curso de VEIN</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://ibarraespinosa.github.io/cursovein/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
