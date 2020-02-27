@@ -3,7 +3,7 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>net.R - Curso de VEIN</title>
+<title>main.R - Curso de VEIN</title>
 <meta name="description" content="Curso VEIN">
 <meta name="generator" content="Hugo 0.65.3" />
 <link href="https://ibarraespinosa.github.io/cursoveinindex.xml" rel="alternate" type="application/rss+xml">
@@ -30,7 +30,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 :root {}
 </style>
-<meta property="og:title" content="net.R" />
+<meta property="og:title" content="main.R" />
 <meta property="og:description" content="Curso VEIN" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/" />
@@ -39,9 +39,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
-<meta name="twitter:title" content="net.R"/>
+<meta name="twitter:title" content="main.R"/>
 <meta name="twitter:description" content="Curso VEIN"/>
-<meta itemprop="name" content="net.R">
+<meta itemprop="name" content="main.R">
 <meta itemprop="description" content="Curso VEIN"></head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCS5SFZ"
@@ -70,15 +70,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>net.R</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<main><h1>main.R</h1><p>O arquivo main.R tem todas as chamadas aos scripts e só este arquivo deveria ser modificado pelo usuario!</p>
+<p>Este arquivo é parecido com namelist.input de WRF.</p>
+<p>Aqui se mostra que a simulação de tráfego esta almacenada no arquivo net.gpkg, mas pode ter outros formatos como shapefile ou MAPINFO.</p>
+<h2 id="configr">config.R</h2>
+<p>O arquivo config.R transforma os dados do arquivo Excel, procura inconsistencia e para se acha, plota os tfs na pasta image e salva os arquivos como .rds na pasta config.</p>
 <div class="edit-meta">
 Last updated on 20 Feb 2020
 
 
 <br>
 Published on 20 Feb 2020
-<br><a href="chapter1/chapter1-3/_index.md/edit/master/content/chapter1/chapter1-3/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/" title="Chapter 3-2-4"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Chapter 3-2-4</a>
-<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/1/" title="Chapter 3-2-1">Next - Chapter 3-2-1 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="chapter1/chapter1-3/_index.md/edit/master/content/chapter1/chapter1-3/_index.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/" title="mileage"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - mileage</a>
+<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/" title="net.R">Next - net.R <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -105,25 +109,19 @@ Published on 20 Feb 2020
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/">metadata</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/">Chapter 3-2-4</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/">fleet_age</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/">tfs</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/">fuel</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/">mileage</a></li>
 </ul>
   
 </li>
 
-<li class="parent active has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/">net.R<span class="mark opened">-</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/1/">Chapter 3-2-1</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/4/">Chapter 3-2-4</a></li>
-</ul>
+<li class="parent active"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/">main.R</a>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/">traffic.R<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/">net.R<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/1/">Chapter 3-2-1</a></li>

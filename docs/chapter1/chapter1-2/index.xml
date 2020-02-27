@@ -22,30 +22,42 @@
     </item>
     
     <item>
-      <title>Chapter 3-2-2</title>
+      <title>fleet_age</title>
       <link>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <description>A planilha fleet_age mostra a frota veicular por ano de uso de veículos em circulação. Esto quer dizer que não são vendas de veículos, nem registros, mas são os veículos sem os veículos sucateados. Mutias vezes obter esta informação é dificil, especialmente fora do São Paulo,ou a nível do pais. Então, para obter este número de veículos em circulação, tem que aplicar uma função de sobrevicencia para considerar só os veículos que sobrevicem com o passo do tempo, descontando assim os sucateados.</description>
     </item>
     
     <item>
-      <title>Chapter 3-2-3</title>
+      <title>tfs</title>
       <link>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/</link>
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <description>tfs são os temporal factors definidos no paper do vein (Ibarra-Espinosa et al 2018). Estos fatores são usados para extrapolar volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manha, precisamos um perfil horario de dados de traego normalizado para o horario pico para extrapolaro tráfego.
+ Ibarra-Espinosa, S., Ynoue, R., O&amp;rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M.</description>
     </item>
     
     <item>
-      <title>Chapter 3-2-4</title>
+      <title>fuel</title>
+      <link>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/</guid>
+      <description>fuel é uma planilha com a configuração a seguir:
+   fuel density_tm3 consumption_lt     D 0.84 3148464880   E 0.809 4646241104   G 0.75425 3871867587    é usada para comparar as estimativas de combustivel com as vendas. Os dados consumption_lt são as vendas de combsutivel para MASP 2018 de Diesel D com 7% de biodiesel, Gasohol (comunmente comhecida como gasolina com 27 % etanol anidro) E etanol (etanol hidratado).</description>
+    </item>
+    
+    <item>
+      <title>mileage</title>
       <link>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/</link>
-      <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <description>mileage é a quilometragem promedio por ano de uso. Os dados do arquivo inventory.xlsx são baseados nas medições de odómetro de mais de um milhão de veículso feitos pela CETESB.
+ Antonio de Castro Bruni and Marcelo Pereira Bales. 2013. Curvas de intensidade de uso por tipo de veiculo automotor da frota da cidade de Sao Paulo This functions depends on the age of use of the vehicle  </description>
     </item>
     
   </channel>

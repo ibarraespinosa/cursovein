@@ -3,7 +3,7 @@
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<title>Chapter 3-2-3 - Curso de VEIN</title>
+<title>tfs - Curso de VEIN</title>
 <meta name="description" content="Curso VEIN">
 <meta name="generator" content="Hugo 0.65.3" />
 <link href="https://ibarraespinosa.github.io/cursoveinindex.xml" rel="alternate" type="application/rss+xml">
@@ -30,8 +30,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>
 :root {}
 </style>
-<meta property="og:title" content="Chapter 3-2-3" />
-<meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." />
+<meta property="og:title" content="tfs" />
+<meta property="og:description" content="tfs são os temporal factors definidos no paper do vein (Ibarra-Espinosa et al 2018). Estos fatores são usados para extrapolar volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manha, precisamos um perfil horario de dados de traego normalizado para o horario pico para extrapolaro tráfego.
+ Ibarra-Espinosa, S., Ynoue, R., O&rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/" />
 <meta property="og:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
@@ -40,13 +41,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
-<meta name="twitter:title" content="Chapter 3-2-3"/>
-<meta name="twitter:description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."/>
-<meta itemprop="name" content="Chapter 3-2-3">
-<meta itemprop="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+<meta name="twitter:title" content="tfs"/>
+<meta name="twitter:description" content="tfs são os temporal factors definidos no paper do vein (Ibarra-Espinosa et al 2018). Estos fatores são usados para extrapolar volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manha, precisamos um perfil horario de dados de traego normalizado para o horario pico para extrapolaro tráfego.
+ Ibarra-Espinosa, S., Ynoue, R., O&rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M."/>
+<meta itemprop="name" content="tfs">
+<meta itemprop="description" content="tfs são os temporal factors definidos no paper do vein (Ibarra-Espinosa et al 2018). Estos fatores são usados para extrapolar volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manha, precisamos um perfil horario de dados de traego normalizado para o horario pico para extrapolaro tráfego.
+ Ibarra-Espinosa, S., Ynoue, R., O&rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M.">
 <meta itemprop="datePublished" content="2017-10-17T15:26:15&#43;00:00" />
 <meta itemprop="dateModified" content="2017-10-17T15:26:15&#43;00:00" />
-<meta itemprop="wordCount" content="69">
+<meta itemprop="wordCount" content="88">
 <meta itemprop="image" content="https://ibarraespinosa.github.io/cursovein/og-image.png"/>
 
 
@@ -79,16 +82,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 </div>
 <div class="content-container">
-<main><h1>Chapter 3-2-3</h1>
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<main><h1>tfs</h1>
+<p>tfs são os temporal factors definidos no paper do vein (Ibarra-Espinosa et al 2018). Estos fatores são usados para extrapolar volume de tráfego horario para outras horas. Por exemplo, como temos a modelação de tráfego de horario pico de manha, precisamos um perfil horario de dados de traego normalizado para o horario pico para extrapolaro tráfego.</p>
+<ul>
+<li>Ibarra-Espinosa, S., Ynoue, R., O&rsquo;Sullivan, S., Pebesma, E., Andrade, M. D. F., and Osses, M.: VEIN v0.2.2: an R package for bottom–up vehicular emissions inventories, Geosci. Model Dev., 11, 2209–2229, <a href="https://doi.org/10.5194/gmd-11-2209-2018,">https://doi.org/10.5194/gmd-11-2209-2018,</a> 2018.</li>
+</ul>
 <div class="edit-meta">
 Last updated on 17 Oct 2017
 
 
 <br>
 Published on 17 Oct 2017
-<br><a href="chapter1/chapter1-2/3.md/edit/master/content/chapter1/chapter1-2/3.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/" title="Chapter 3-2-2"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - Chapter 3-2-2</a>
-<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/" title="Chapter 3-2-4">Next - Chapter 3-2-4 <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+<br><a href="chapter1/chapter1-2/3.md/edit/master/content/chapter1/chapter1-2/3.md" class="edit-page"><i class="fas fa-pen-square"></i> Edit on GitHub</a></div><nav class="pagination"><a class="nav nav-prev" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/" title="fleet_age"><i class="fas fa-arrow-left" aria-hidden="true"></i> Prev - fleet_age</a>
+<a class="nav nav-next" href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/" title="fuel">Next - fuel <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
 </nav><footer><p class="powered">Powered by <a href="https://gohugo.io">Hugo</a>. Theme by <a href="https://themes.gohugo.io/hugo-theme-techdoc/">TechDoc</a>. Designed by <a href="https://github.com/thingsym/hugo-theme-techdoc">Thingsym</a>.</p>
 </footer>
 </main><div class="sidebar">
@@ -115,25 +121,19 @@ Published on 17 Oct 2017
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/1/">metadata</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/">Chapter 3-2-2</a></li>
-<li class="active"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/">Chapter 3-2-4</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/2/">fleet_age</a></li>
+<li class="active"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/3/">tfs</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/5/">fuel</a></li>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-2/4/">mileage</a></li>
 </ul>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/">net.R<span class="mark closed">+</span></a>
-  
-<ul class="sub-menu">
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/1/">Chapter 3-2-1</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/2/">Chapter 3-2-2</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/3/">Chapter 3-2-3</a></li>
-<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/4/">Chapter 3-2-4</a></li>
-</ul>
+<li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-3/">main.R</a>
   
 </li>
 
-<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/">traffic.R<span class="mark closed">+</span></a>
+<li class=" has-sub-menu"><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/">net.R<span class="mark closed">+</span></a>
   
 <ul class="sub-menu">
 <li class=""><a href="https://ibarraespinosa.github.io/cursovein/chapter1/chapter1-4/1/">Chapter 3-2-1</a></li>
