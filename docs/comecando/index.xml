@@ -27,11 +27,11 @@
       <pubDate>Tue, 17 Oct 2017 15:26:15 +0000</pubDate>
       
       <guid>https://ibarraespinosa.github.io/cursovein/comecando/installation/</guid>
-      <description>Instalação de VEIN A forma mas facil de instalar vein é, abrir R e escrever na termina:
+      <description>Windows Usuario de Windows tem que instalar primeiro rtools.   Instalação de VEIN A forma mas facil de instalar vein é, abrir R e escrever na termina:
 Com a versão de GitHub. O curso vai usar a versão 0.8.8
 #install.packages(&amp;#34;remotes&amp;#34;) remotes::install_github(&amp;#34;atmoschem/vein&amp;#34;) Outras librerias Pode ser que os usuarios de Windows tem que primeiro instalar raster de CRAN
 install.packages(&amp;#34;raster&amp;#34;) remotes::install_github(&amp;#34;atmoschem/eixport&amp;#34;) E as outras bibliotecas assim:
-install.packages(c(&amp;#34;ggplot2, &amp;#34;readxl&amp;#34;)) Dica Antes de usar VEIN, fechar o Google Chrome, pois os processamentos usam muita memoria RAM.</description>
+install.packages(c(&amp;#34;ggplot2&amp;#34;, &amp;#34;readxl&amp;#34;)) Dica Antes de usar VEIN, fechar o Google Chrome, pois os processamentos usam muita memoria RAM.</description>
     </item>
     
     <item>
